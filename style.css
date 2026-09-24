@@ -362,3 +362,285 @@ img {
 a.footer__link:hover {
     border-bottom-color: var(--color-text-inverse);
 }
+.menu-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color:var(--color-background-overlay);
+}
+
+.menu-title span {
+    color: var(--color-text-accent);
+    font-style: italic;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+.tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px 8px 8px;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-background-overlay);
+    transition: all 0.3s ease;
+}
+.tab-btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-border-primary);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.tab-btn:hover:not(.tab-btn--active) {
+    background-color: var(--color-border-inverse);
+    border-color: var(--color-border-inverse);
+    color: var(--color-background-page);
+}
+
+.tab-btn:hover:not(.tab-btn--active) .tab-btn__icon {
+    background-color: var(--color-background-page);
+}
+.tab-btn--active {
+    background-color: var(--color-background-container);
+    border-color: var(--color-background-container);
+    color: var(--color-background-page);
+    cursor: default;
+}
+.tab-btn--active .tab-btn__icon {
+    background-color: var(--color-background-page);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.menu-grid--hidden {
+    display: none !important;
+}
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 506px;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+.menu-card:hover {
+    transform: translateY(-4px);
+}
+.menu-card__img-wrapper {
+    width: 310px;
+    height: 310px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.menu-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.menu-card:hover .menu-card__img {
+    transform: scale(1.05);
+}
+.menu-card__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.menu-card__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    margin: 0 0 12px 0;
+    color: var(--color-background-overlay);
+}
+.menu-card__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    color: var(--color-background-overlay);
+}
+.menu-card__price {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    margin-top: auto;
+    color: var(--color-background-overlay);
+}
+body.dark-theme {
+    --color-text-primary: #E1D4C9;
+    --color-text-inverse: #E1D4C9;
+    --color-text-accent: #B0907A;
+    --color-background-page: #292826;
+    --color-background-container: #403F3D;
+    --color-background-overlay: rgba(41, 40, 38, 0.8);
+    --color-border-primary: #665F55;
+    --color-border-inverse: #C1B6AD;
+    --font-family: 'Inter';
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-background-page);
+    color: var(--color-text-primary);
+}
+.menu-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: var(--color-text-primary);
+}
+.menu-title span {
+    color: var(--color-text-accent);
+    font-style: italic;
+}
+.tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px 6px 6px;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--color-text-primary);
+  transition: all 0.3s ease;
+}
+
+.tab-btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-border-primary);
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover:not(.tab-btn--active) {
+  background-color: var(--color-background-container);
+  border-color: var(--color-background-container);
+  color: var(--color-text-inverse);
+}
+
+.tab-btn:hover:not(.tab-btn--active) .tab-btn__icon {
+  background-color: var(--color-background-page);
+}
+
+.tab-btn--active {
+  background-color: var(--color-background-container);
+  border-color: var(--color-background-container);
+  color: var(--color-text-inverse);
+  cursor: default;
+}
+
+.tab-btn--active .tab-btn__icon {
+  background-color: var(--color-background-page);
+}
+.menu-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    text-align: center;
+    max-width:  600px;
+    margin: 0 auto 100px;
+    color: var(--color-text-primary);
+}
+.menu-title span {
+    color: var(--color-text-accent);
+    font-style: italic;
+}
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  min-height: 506px;
+  height: 100%;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.menu-card__img-wrapper {
+    width: 310px;
+    height: 310px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.menu-card__title, .menu-card__description, .menu-card__price {
+  color: var(--color-text-primary);
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-primary);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+.theme-toggle:hover {
+    background-color: var(--color-background-container);
+    border-color: var(--color-background-container);
+    transform: scale(1.05);
+}
+
