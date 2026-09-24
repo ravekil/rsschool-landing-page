@@ -8,11 +8,10 @@
 </head>
 <body>
 <header class="header">
-    <div class="container header_main">
+    <div class="container header__container">
         <a href="./index.html" class="logo">
             <img src="./assets/icons/logo.svg" alt="Coffee House Logo">
         </a>
-
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#coffee" class="nav__link">Favorite coffee</a></li>
@@ -21,9 +20,9 @@
                 <li class="nav__item"><a href="#contacts" class="nav__link">Contact us</a></li>
             </ul>
         </nav>
-        <div class="header_action">
-            <a href="./menu.html" class="menu_link"></a>
-        </div>
+        <a href="./menu.html" class="menu-link">
+        <img src="./assets/icons/Menu.svg" alt="Menu Icon">
+        </a>
     </div>
 </header>
 <main class="main">
@@ -31,8 +30,7 @@
         <div class="container hero__container">
             <div class="hero__content">
             <h1 class="hero__title">
-                <span>Enjoy</span>
-                premium coffee at our charming cafe
+                <span>Enjoy</span> premium coffee at our charming cafe
             </h1>
             <p class="hero__text">
                 With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.
@@ -46,7 +44,7 @@
             <h2 class="section-title">Choose your <span>favorite</span> coffee </h2>
             <div class="slider">
                 <button class="slider__arrow slider__arrow-prev" type="button" aria-label="Previous slide">
-                    <img src="./assets/icons/State=default.svg">
+                    <img src="./assets/icons/arrow_left.svg">
                 </button>
                 <div class="slider__photo">
                     <div class="slider__track">
@@ -77,13 +75,13 @@
                     </div>
                 </div>
                 <button class="slider__arrow slider__arrow-prev" type="button" aria-label="Next slide">
-                    <img src="./assets/icons/arrow.svg">
+                    <img src="./assets/icons/arrow_right.svg">
                 </button>
             </div>
-            <div class="slider_indicator">
-                <button class="slider_indicator slider__indicator--active" type="button" aria-label="slide 1"></button>
-                <button class="slider_indicator" type="button" aria-label="slide 2"></button>
-                <button class="slider_indicator" type="button" aria-label="slide 3"></button>
+            <div class="slider__controls">
+                <button class="slider__control slider__indicator--active" type="button" aria-label="slide 1"></button>
+                <button class="slider__control" type="button" aria-label="slide 2"></button>
+                <button class="slider__control" type="button" aria-label="slide 3"></button>
             </div>
         </div>
     </section>
@@ -92,20 +90,20 @@
             <h2 class="section-title">
                 Resource is the perfect and cozy place where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.
             </h2>
-        <div class="about__photo">
-            <div class="about__img-wrapper">
-                <img src="./assets/images/about-1.jpg">
+            <div class="about__photo">
+                <div class="about__img-wrapper">
+                    <img src="./assets/images/about-1.jpg">
+                </div>
+                <div class="about__img-wrapper">
+                    <img src="./assets/images/about-2.jpg">
+                </div>
+                <div class="about__img-wrapper">
+                    <img src="./assets/images/about-3.jpg">
+                </div>
+                <div class="about__img-wrapper">
+                    <img src="./assets/images/about-4.jpg">
+                </div>
             </div>
-            <div class="about__img-wrapper">
-                <img src="./assets/images/about-2.jpg">
-            </div>
-            <div class="about__img-wrapper">
-                <img src="./assets/images/about-3.jpg">
-            </div>
-            <div class="about__img-wrapper">
-                <img src="./assets/images/about-4.jpg">
-            </div>
-        </div>
         </div>
     </section>
     <section class="mobile-app" id="mobile-app">
@@ -136,17 +134,19 @@
             <h2 class="section-title footer__title">
                 Sip, Savor, Smile.<span>It’s coffee time!</span>
             </h2>
-            <div class="insta">
+            <div class="footer__socials">
                  <a href="#" class="btn-insta" target="_blank">
                 <img src="./assets/icons/instagram.svg">
                 </a>
             </div>
         </div>
-        <h3 class="section-title">Contact us</h2>
-            <div class="location">
-                <img src="./assets/icons/location.svg">
+            <div class="footer__contacts">
+            <h3 class="footer__contacts-title">Contact us</h3>
+                <div class="footer__item">
+                    <img src="./assets/icons/location.svg">
+                </div>
             </div>
-    </div>
+        </div>
 </footer>
 </body>
 </html>
